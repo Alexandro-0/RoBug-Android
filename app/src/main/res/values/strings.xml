@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">roBug</string>
+
+    <string name="permission_locationRequestTitle">位置權限</string>
+    <string name="permission_locationRequestContent">請啟動您的位置服務</string>
+    <string name="permission_locationCancel">取消</string>
+    <string name="permission_locationEnable">開啟</string>
+
+    <string name="refresh">重新搜尋</string>
+    <string name="close_ble_connection">中斷連線</string>
+    <string name="connecting">連線中...</string>
+
+    <string name="ble_device_not_fount">查無藍芽裝置</string>
+
+    <string name="scanned_list">已配對過的藍芽裝置</string>
+    <string name="new_list">新藍芽裝置</string>
+
+    <string name="scanning_activity_title">藍芽連線</string>
+</resources>

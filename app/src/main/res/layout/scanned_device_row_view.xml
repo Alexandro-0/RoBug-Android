@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_s">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bluetooth" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="_device name"
+            android:textSize="@dimen/sp_m"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mac_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="_mac_address"
+            android:textColor="@color/grey_500"
+            android:textSize="@dimen/sp_s" />
+    </LinearLayout>
+
+</LinearLayout>
