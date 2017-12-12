@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.aajc.robug.ble.RobugControlActivity3">
+    tools:context="com.aajc.robug.ble.RobugControlActivity4">
 
     <RelativeLayout
         android:visibility="gone"

@@ -30,6 +30,9 @@
         <activity
             android:name=".ble.RobugControlActivity3"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ble.RobugControlActivity4"
+            android:screenOrientation="portrait"></activity>
 
         <service
             android:name=".ble.BluetoothLeService"

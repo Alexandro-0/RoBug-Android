@@ -112,9 +112,9 @@ public class Main3Activity extends AppCompatActivity {
                 scannedDeviceLayout.addView(new DeviceRowView(this, device.getName(), device.getAddress(), new DeviceRowView.iDeviceRowView() {
                     @Override
                     public void rowClicked(String name, String address) {
-                        Intent in = new Intent(Main3Activity.this, RobugControlActivity3.class);
-                        in.putExtra("deviceName", name);
-                        in.putExtra("deviceId", address);
+                        Intent in = new Intent(Main3Activity.this, RobugControlActivity4.class);
+                        in.putExtra("name", name);
+                        in.putExtra("address", address);
 
                         // save id to pref
                         PrefRW.write(Main3Activity.this, address, "exist");
@@ -127,9 +127,9 @@ public class Main3Activity extends AppCompatActivity {
                 newDeviceLayout.addView(new DeviceRowView(this, device.getName(), device.getAddress(), new DeviceRowView.iDeviceRowView() {
                     @Override
                     public void rowClicked(String name, String address) {
-                        Intent in = new Intent(Main3Activity.this, RobugControlActivity3.class);
-                        in.putExtra("deviceName", name);
-                        in.putExtra("deviceId", address);
+                        Intent in = new Intent(Main3Activity.this, RobugControlActivity4.class);
+                        in.putExtra("name", name);
+                        in.putExtra("address", address);
 
                         // save id to pref
                         PrefRW.write(Main3Activity.this, address, "exist");
