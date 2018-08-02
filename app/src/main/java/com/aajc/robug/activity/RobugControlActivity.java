@@ -1,4 +1,4 @@
-package com.aajc.robug.ble;
+package com.aajc.robug.activity;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,12 +9,13 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.aajc.robug.R;
+import com.aajc.robug.ble.ControlActivityTemplate;
 
 /**
  * Created by Alexandro on 2017/12/12.
  */
 
-public class RobugControlActivity4 extends ControlActivityTemplate {
+public class RobugControlActivity extends ControlActivityTemplate {
 
     public String deviceName, deviceAddress;
     public RelativeLayout controlLayout;

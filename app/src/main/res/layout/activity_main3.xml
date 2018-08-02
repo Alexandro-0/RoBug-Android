@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="com.aajc.robug.ble.Main3Activity">
+    tools:context="com.aajc.robug.activity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ble.Main3Activity"
+            android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,10 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ble.RobugControlActivity3"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".ble.RobugControlActivity4"
+            android:name=".activity.RobugControlActivity"
             android:screenOrientation="portrait"></activity>
 
         <service

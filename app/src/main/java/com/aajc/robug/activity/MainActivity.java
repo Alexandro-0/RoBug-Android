@@ -1,4 +1,4 @@
-package com.aajc.robug.ble;
+package com.aajc.robug.activity;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -27,11 +27,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aajc.robug.R;
+import com.aajc.robug.ble.DeviceRowView;
 import com.aajc.robug.preference.PrefRW;
 
 import java.util.ArrayList;
 
-public class Main3Activity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private static final int SCAN_TIME = 5000;
     private final int REQUEST_ENABLE_BT = 100;
@@ -43,8 +44,8 @@ public class Main3Activity extends AppCompatActivity {
     private BluetoothAdapter mBluetoothAdapter;
     private ArrayList<BluetoothDevice> mBluetoothDevices = new ArrayList<BluetoothDevice>();
 
-    private Handler mHandler; //該Handler用來搜尋Devices10秒後，自動停止搜尋
-    private String TAG = "main3";
+    private Handler mHandler; //該Handler用來搜尋Devices5秒後，自動停止搜尋
+    private String TAG = "main";
     /**
      * 建立一個BLAdapter的Callback，當使用startLeScan或stopLeScan時，每搜尋到一次設備都會跳到此callback
      */
@@ -112,12 +113,12 @@ public class Main3Activity extends AppCompatActivity {
                 scannedDeviceLayout.addView(new DeviceRowView(this, device.getName(), device.getAddress(), new DeviceRowView.iDeviceRowView() {
                     @Override
                     public void rowClicked(String name, String address) {
-                        Intent in = new Intent(Main3Activity.this, RobugControlActivity4.class);
+                        Intent in = new Intent(MainActivity.this, RobugControlActivity.class);
                         in.putExtra("name", name);
                         in.putExtra("address", address);
 
                         // save id to pref
-                        PrefRW.write(Main3Activity.this, address, "exist");
+                        PrefRW.write(MainActivity.this, address, "exist");
 
                         startActivity(in);
                     }
@@ -127,12 +128,12 @@ public class Main3Activity extends AppCompatActivity {
                 newDeviceLayout.addView(new DeviceRowView(this, device.getName(), device.getAddress(), new DeviceRowView.iDeviceRowView() {
                     @Override
                     public void rowClicked(String name, String address) {
-                        Intent in = new Intent(Main3Activity.this, RobugControlActivity4.class);
+                        Intent in = new Intent(MainActivity.this, RobugControlActivity.class);
                         in.putExtra("name", name);
                         in.putExtra("address", address);
 
                         // save id to pref
-                        PrefRW.write(Main3Activity.this, address, "exist");
+                        PrefRW.write(MainActivity.this, address, "exist");
 
                         startActivity(in);
                     }
